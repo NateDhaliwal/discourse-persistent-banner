@@ -1,0 +1,12 @@
+<div class='persistent-banner' id='persistent-banner' style='--banner-visible: none;'>
+    <p>
+        {{theme-setting "banner_value"}}
+    </p>
+</div>
+
+<script type='text/discourse-plugin' version='0.8.13'>
+    function showPersistentBanner() {
+        banner = document.getElementById('persistent-banner');
+        banner.style.setProperty('--banner-visible', 'block');
+    }
+</script>
