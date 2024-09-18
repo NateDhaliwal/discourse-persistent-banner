@@ -1,0 +1,17 @@
+div.persistent-banner {
+    background-color: --secondary;
+    color: --primary;
+    padding: 3px;
+    border: 3px solid --secondary;
+    text-align: center;
+    width: 100%;
+    display: var(--banner-visible);
+}
+
+p {
+    color: --primary;
+}
+
+a {
+    color: --tertiary;
+}
