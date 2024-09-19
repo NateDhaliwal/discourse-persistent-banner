@@ -1,11 +1,11 @@
 div.persistent-banner {
-    background-color: --secondary;
-    color: --primary;
+    background-color: $banner_background_color;
+    color: $banner_text_color;
     padding: 3px;
-    border: 3px solid --secondary;
+    border: 3px solid $banner_text_color;
     text-align: center;
     width: 100%;
-    display: var(--banner-visible);
+    display: $banner_visible;
 }
 
 p {
