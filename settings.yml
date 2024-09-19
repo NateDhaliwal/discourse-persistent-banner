@@ -12,3 +12,10 @@ banner_text_content:
   default: 
   type: string
   description: "This will change the text of the banner."
+
+banner_visible:
+  default: block
+  type: enum
+  choices:
+    - none
+  description: "'block' for banner to be visible; 'none' for it to be hidden."
