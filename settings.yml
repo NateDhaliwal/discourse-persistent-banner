@@ -1,0 +1,12 @@
+banner_background_color:
+  default: white
+  type: string
+  description: 'This will change the background color of the banner."
+banner_text_color:
+  default: black
+  type: string
+  description: "This will change the text color of the banner."
+banner_text_content:
+  default: 
+  type: string
+  description: "This will change the text of the banner."
