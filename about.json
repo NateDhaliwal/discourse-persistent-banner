@@ -3,6 +3,6 @@
   "about_url": "",
   "license_url": "https://github.com/NateDhaliwal/discourse-persistent-banner/blob/main/LICENSE",
   "component": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": "NateDhaliwal"
 }
