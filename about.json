@@ -2,4 +2,9 @@
   "name": "Persistent banner",
   "about_url": "",
   "license_url": "https://github.com/NateDhaliwal/discourse-persistent-banner/blob/main/LICENSE"
+  "component": true,
+  "authors": "NateDhaliwal",
+  "theme_version": 1.0.0,
+  "minimum_discourse_version": null, 
+  "maximum_discourse_version": null,
 }
