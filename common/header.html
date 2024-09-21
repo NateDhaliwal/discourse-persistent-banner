@@ -1,11 +1,12 @@
 <script type="text/discourse-plugin" version="0.8.13">
-  alert(settings.banner_text_content);
+  content = document.getElementById('benner-content');
+  content.innerHTML = settings.banner_text_content;
 </script>
 
 <script type='text/x-handlebars' data-template-name='persistent-banner'>
   
   <div class='header persistent-banner' id='persistent-banner'>
-    <p>
+    <p id='banner-content'>
         {{html-safe (theme-setting 'banner_text_content')}}
     </p>
 </div>
