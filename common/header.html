@@ -3,5 +3,10 @@
 </script>
 
 <script type='text/x-handlebars' data-template-name='my-template'>
-  <h1>{{theme-setting 'banner_text_content'}}</h1>
+  
+  <div class='header persistent-banner' id='persistent-banner'>
+    <p>
+        {{html-safe (theme-setting 'banner_text_content')}}
+    </p>
+</div>
 </script>
