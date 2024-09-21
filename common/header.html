@@ -1,6 +1,10 @@
 <script type="text/discourse-plugin" version="0.8.13">
-  content = document.getElementById('persistent-banner').getElementById('banner-content');
-  content.innerHTML = settings.banner_text_content;
+  let text_content = settings.banner_text_content;
+</script>
+
+<script>
+  content = document.getElementById('banner-content');
+  content.innerHTML = text_content;
 </script>
 
 <div class='header persistent-banner' id='persistent-banner'>
