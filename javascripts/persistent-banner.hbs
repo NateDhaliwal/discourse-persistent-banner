@@ -1,7 +1,7 @@
 <script type='text/x-handlebars' data-template-name='persistent-banner'>
   <div class='header persistent-banner' id='persistent-banner' style='display: block;'>
     <p>
-        {{theme-setting 'banner_text_content'}}
+        {{html-safe (theme-setting 'banner_text_content')}}
     </p>
 </div>
 </script>
