@@ -5,8 +5,7 @@ div.persistent-banner {
     border: 3px solid $banner_text_color;
     text-align: center;
     max-width: calc(var(--d-sidebar-width) + var(--d-max-width));
-    width: 80%;
-    display: $banner_visible; 
+    display: $banner_visible;
 }
 
 p {
