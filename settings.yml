@@ -20,3 +20,12 @@ banner_visible:
     - block
     - none
   description: "'block' for banner to be visible; 'none' for it to be hidden."
+
+plugin_outlet:
+  type: enum
+  default: "above-site-header"
+  choices:
+    - "above-site-header"
+    - "below-site-header"
+    - "above-main-container"
+  refresh: true
