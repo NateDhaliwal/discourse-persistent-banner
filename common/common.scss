@@ -6,6 +6,7 @@ div.persistent-banner {
     text-align: center;
     max-width: calc(var(--d-sidebar-width) + var(--d-max-width));
     display: $banner_visible;
+    align: center;
 }
 
 p {
