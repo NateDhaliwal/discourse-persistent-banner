@@ -9,7 +9,7 @@ banner_text_color:
   description: "This will change the text color of the banner."
 
 banner_text_content:
-  default: ""
+  default: "SAMPLE BANNER TEXT"
   type: string
   description: "This will change the text of the banner."
 
