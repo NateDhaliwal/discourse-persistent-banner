@@ -1,3 +1,5 @@
-<p>
-  {{html-safe (theme-setting 'banner_text_content')}}
-</p>
+{{if html-safe (theme-setting 'banner_text_content') != ""}}
+  <p>
+    {{html-safe (theme-setting 'banner_text_content')}}
+  </p>
+{{/if}}
