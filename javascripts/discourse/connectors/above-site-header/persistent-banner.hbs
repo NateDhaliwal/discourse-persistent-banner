@@ -1,5 +1,6 @@
-{{#if html-safe (theme-setting 'banner_text_content') == "hi"}}
+{{#if (theme-setting 'banner_text_content') == "hi"}}
   <p>
+    hibanner
     {{html-safe (theme-setting 'banner_text_content')}}
   </p>
 {{/if}}
