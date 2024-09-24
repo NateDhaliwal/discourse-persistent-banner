@@ -1,6 +1,8 @@
 {{#if bannerIsFilled}}
-  <p>
-    {{html-safe (theme-setting 'banner_text_content')}}
-  </p>
+  <div class='persistent-banner'>
+    <p>
+      {{html-safe (theme-setting 'banner_text_content')}}
+    </p>
+  </div>
 {{/if}}
 
