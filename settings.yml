@@ -2,21 +2,21 @@ banner_background_color:
   default: white
   type: enum
   choices:
-  - black
-  - silver
-  - gray
-  - white
-  - maroon
-  - red
-  - purple
-  - green
-  - lime
-  - olive
-  - yellow
-  - navy
-  - blue
-  - teal
-  - aqua
+    - black
+    - silver
+    - gray
+    - white
+    - maroon
+    - red
+    - purple
+    - green
+    - lime
+    - olive
+    - yellow
+    - navy
+    - blue
+    - teal
+    - aqua
   description: "This will change the background color of the banner."
 
 banner_text_color:
