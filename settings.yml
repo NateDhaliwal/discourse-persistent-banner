@@ -49,6 +49,6 @@ banner_visible:
   default: block
   type: enum
   choices:
-    - block
-    - none
+    - show
+    - hide
   description: "'block' for banner to be visible; 'none' for it to be hidden."
