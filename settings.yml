@@ -46,7 +46,7 @@ banner_text_content:
   description: "This will change the text of the banner."
 
 banner_visible:
-  default: block
+  default: show
   type: enum
   choices:
     - show
