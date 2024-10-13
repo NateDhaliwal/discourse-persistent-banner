@@ -38,5 +38,6 @@ banner_position:
   choices:
     - above-site-header
     - below-site-header
-    - above-main-containter
+    - above-main-container
+    - before-topic-list
   description: "The location of the banner."
