@@ -1,11 +1,13 @@
 import Component from "@glimmer/component";
-import { htmlSafe } from "@ember/template";
 import { apiInitializer } from "discourse/lib/api";
+
+banner_plugin_outlet = settings.banner_location
 
 export default apiInitializer("1.14.0", (api) => {
   try {
+    banner_plugin_outlet = settings.banner_location
     api.renderInOutlet(
-      settings.banner_position,
+      banner_plugin_outlet,
       class persistentbanner extends Component {
         get bannerIsFilled() {
           if (settings.banner_text_content == "") {
