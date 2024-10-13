@@ -1,3 +1,4 @@
+console.log(dirname());
 import Component from "@glimmer/component";
 
 export default class persistentbanner extends Component {
