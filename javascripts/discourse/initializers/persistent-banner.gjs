@@ -24,6 +24,15 @@ export default apiInitializer("1.14.0", (api) => {
             return true;
           }
         }
+        <template>
+          {{#if bannerIsFilled}}
+            <div class='persistent-banner'>
+              <p>
+                {{html_safe (theme-setting 'banner_text_content')}}
+              </p>
+            </div>
+          {{/if}}
+        </template>
       } 
     );
   } catch (e) {
