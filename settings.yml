@@ -20,24 +20,9 @@ banner_background_color:
   description: "This will change the background color of the banner."
 
 banner_text_color:
-  default: black
-  type: enum
-  choices:
-    - black
-    - silver
-    - gray
-    - white
-    - maroon
-    - red
-    - purple
-    - green
-    - lime
-    - olive
-    - yellow
-    - navy
-    - blue
-    - teal
-    - aqua
+  default: "black"
+  type: textarea-true
+
   description: "This will change the text color of the banner."
 
 banner_text_content:
@@ -51,4 +36,4 @@ banner_visible:
   choices:
     - show
     - hide
-  description: "'block' for banner to be visible; 'none' for it to be hidden."
+  description: "'show' for banner to be visible; 'hide' for it to be hidden."
