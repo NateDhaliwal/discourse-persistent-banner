@@ -1,18 +1,18 @@
 div.persistent-banner {
-    background-color: $banner_background_color;
-    color: $banner_text_color;
-    padding: 3px;
-    border: #{$banner_border_thickness}px solid $banner_border_color;
-    text-align: center;
-    max-width: var(--d-header)px;
-    whitespace: pre-wrap;
+  background-color: $banner_background_color;
+  color: $banner_text_color;
+  padding: 3px;
+  border: #{$banner_border_thickness}px solid $banner_border_color;
+  text-align: center;
+  max-width: var(--d-header)px;
+  whitespace: pre-wrap;
 }
 
 p {
-    color: --primary;
-    whitespace: pre-wrap;
+  color: --primary;
+  whitespace: pre-wrap;
 }
 
 a {
-    color: --tertiary;
+  color: --tertiary;
 }
