@@ -23,7 +23,7 @@ export default apiInitializer("1.14.0", (api) => {
           }
         }
         <template>
-          {{#if bannerIsFilled}}
+          {{#if this.bannerIsFilled}}
             <div class='persistent-banner'>
               <p>
                 {{html_safe (theme-setting 'banner_text_content')}}
