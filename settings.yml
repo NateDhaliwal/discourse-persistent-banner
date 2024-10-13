@@ -1,33 +1,27 @@
 banner_background_color:
-  default: white
-  type: enum
-  choices:
-    - black
-    - silver
-    - gray
-    - white
-    - maroon
-    - red
-    - purple
-    - green
-    - lime
-    - olive
-    - yellow
-    - navy
-    - blue
-    - teal
-    - aqua
-  description: "This will change the background color of the banner."
+default: "white"
+  type: string
+  description: "This will change the background color of the banner. Enter valid CSS colours or hex values (including the #)."
 
 banner_text_color:
   default: "black"
-  type: textarea-true
+  type: string
+  description: "This will change the text color of the banner. Enter valid CSS colours or hex values (including the #)."
 
-  description: "This will change the text color of the banner."
+banner_border_color:
+  default: "black"
+  type: string
+  description: "This will change the border color of the banner. Enter valid CSS colours or hex values (including the #)."
+
+banner_border_thickness:
+  default: 3
+  type: integer
+  description: "This will change the border thickness of the banner. All numbers are in pixels (px)."
 
 banner_text_content:
   default: "SAMPLE BANNER TEXT"
   type: string
+  textarea: true
   description: "This will change the text of the banner."
 
 banner_visible:
@@ -37,3 +31,12 @@ banner_visible:
     - show
     - hide
   description: "'show' for banner to be visible; 'hide' for it to be hidden."
+
+banner_position:
+  default: above-site-header
+  type: enum
+  choices:
+    - above-site-header
+    - below-site-header
+    - above-main-containter
+  description: "The location of the banner."
