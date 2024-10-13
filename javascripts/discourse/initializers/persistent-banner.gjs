@@ -1,11 +1,11 @@
 import Component from "@glimmer/component";
 import { apiInitializer } from "discourse/lib/api";
 
-banner_plugin_outlet = settings.banner_location
+banner_plugin_outlet = settings.banner_position
 
 export default apiInitializer("1.14.0", (api) => {
   try {
-    banner_plugin_outlet = settings.banner_location
+    banner_plugin_outlet = settings.banner_position
     api.renderInOutlet(
       banner_plugin_outlet,
       class persistentbanner extends Component {
