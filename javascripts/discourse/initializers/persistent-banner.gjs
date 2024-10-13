@@ -1,11 +1,10 @@
 import Component from "@glimmer/component";
 import { apiInitializer } from "discourse/lib/api";
 
-banner_plugin_outlet = settings.banner_position
 
 export default apiInitializer("1.14.0", (api) => {
   try {
-    banner_plugin_outlet = settings.banner_position
+    const banner_plugin_outlet = settings.banner_position
     api.renderInOutlet(
       banner_plugin_outlet,
       class persistentbanner extends Component {
@@ -18,11 +17,14 @@ export default apiInitializer("1.14.0", (api) => {
             return true;
           }
         }
+        get bannerTextContent() {
+          return settings.banner_text_content;
+        }
         <template>
           {{#if this.bannerIsFilled}}
             <div class='persistent-banner'>
               <p>
-                {{html_safe (theme-setting 'banner_text_content')}}
+                {{htmlSafe this.bannerTextContent}}
               </p>
             </div>
           {{/if}}
@@ -32,4 +34,4 @@ export default apiInitializer("1.14.0", (api) => {
   } catch (e) {
     console.log(e);
   }
-}
+});
