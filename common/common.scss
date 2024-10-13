@@ -2,7 +2,7 @@ div.persistent-banner {
     background-color: $banner_background_color;
     color: $banner_text_color;
     padding: 3px;
-    border: ($banner_border_thickness)px solid $banner_border_color;
+    border: #{$banner_border_thickness}px solid $banner_border_color;
     text-align: center;
     max-width: calc(var(--d-sidebar-width) + var(--d-max-width));
     whitespace: pre-wrap;
