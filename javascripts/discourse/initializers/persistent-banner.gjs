@@ -3,7 +3,7 @@ import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("1.14.0", (api) => {
   api.renderInOutlet(
-    settings.banner_location,
+    settings.banner_position,
     class persistentbanner extends Component {
       get bannerIsFilled() {
         if (settings.banner_text_content == "") {
