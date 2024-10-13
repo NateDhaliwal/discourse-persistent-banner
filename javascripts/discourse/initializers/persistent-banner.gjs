@@ -5,9 +5,11 @@ import { inject as service } from "@ember/service";
 import { htmlSafe } from "@ember/template";
 import { apiInitializer } from "discourse/lib/api";
 
+console.log(settings.banner_position)
+
+
 export default apiInitializer("1.14.0", (api) => {
   try {
-    console.log(api.getCurrentUser());
     api.renderInOutlet(
       settings.banner_position,
       class persistentbanner extends Component {
