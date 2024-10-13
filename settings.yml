@@ -1,5 +1,5 @@
 banner_background_color:
-default: "white"
+  default: "white"
   type: string
   description: "This will change the background color of the banner. Enter valid CSS colours or hex values (including the #)."
 
