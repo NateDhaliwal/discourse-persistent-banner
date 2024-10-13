@@ -7,7 +7,6 @@ export default class persistentbanner extends Component {
     } else if (settings.banner_visible == "hide") {
       return false;
     } else {
-      alert(dirname());
       return true;
     }
   }
