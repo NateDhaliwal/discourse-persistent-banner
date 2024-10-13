@@ -10,18 +10,23 @@ import { apiInitializer } from "discourse/lib/api";
 import loadScript from "discourse/lib/load-script";
 
 export default apiInitializer("1.14.0", (api) => {
-  api.renderInOutlet(
-    settings.banner_position,
-    class persistentbanner extends Component {
-      get bannerIsFilled() {
-        if (settings.banner_text_content == "") {
-          return false;
-        } else if (settings.banner_visible == "hide") {
-          return false;
-        } else {
-          return true;
+  try {
+    console.log(api.getCurrentUser());
+    api.renderInOutlet(
+      settings.banner_position,
+      class persistentbanner extends Component {
+        get bannerIsFilled() {
+          if (settings.banner_text_content == "") {
+            return false;
+          } else if (settings.banner_visible == "hide") {
+            return false;
+          } else {
+            return true;
+          }
         }
-      }
-    }
-  );
+      } 
+    );
+  } catch (e) {
+    console.log(e);
+  }
 }
