@@ -6,3 +6,4 @@ The banner's background text, color text and content can be edited by admins. Ad
 <br>
 HUGE thanks to @Lilly for helping to correct the files!
 <br>
+Learn more here: https://meta.discourse.org/t/discourse-persistent-banner/330575
