@@ -8,24 +8,15 @@ export default apiInitializer("1.14.0", (api) => {
     api.renderInOutlet(
       banner_plugin_outlet,
       class persistentbanner extends Component {
-        get bannerIsFilled() {
-          if (settings.banner_text_content == "") {
-            return false;
-          } else {
-            return true;
-          }
-        }
         get bannerTextContent() {
           return settings.banner_text_content;
         }
         <template>
-          {{#if this.bannerIsFilled}}
-            <div class='persistent-banner'>
-              <p>
-                {{htmlSafe this.bannerTextContent}}
-              </p>
-            </div>
-          {{/if}}
+          <div class='persistent-banner'>
+            <p>
+              {{htmlSafe this.bannerTextContent}}
+            </p>
+          </div>
         </template>
       } 
     );
