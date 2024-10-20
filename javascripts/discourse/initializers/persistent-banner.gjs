@@ -11,8 +11,6 @@ export default apiInitializer("1.14.0", (api) => {
         get bannerIsFilled() {
           if (settings.banner_text_content == "") {
             return false;
-          } else if (settings.banner_visible == "hide") {
-            return false;
           } else {
             return true;
           }
