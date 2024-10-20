@@ -7,7 +7,7 @@ div.persistent-banner {
   max-width: 100%;
   /*max-width: calc(var(--d-sidebar-width) + var(--d-max-width));*/
   whitespace: pre-wrap;
-  @if $banner_visible == 'show' {
+  @if $banner_visible == 'hide' {
     display: none;
   }
 }
